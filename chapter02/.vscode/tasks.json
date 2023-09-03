@@ -61,10 +61,10 @@
             "problemMatcher": {
                 "pattern": [
                     {
-                      "regexp": ".",
-                      "file": 1,
-                      "location": 2,
-                      "message": 3
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
                     }
                 ],
                 "background": {
@@ -85,10 +85,10 @@
             "problemMatcher": {
                 "pattern": [
                     {
-                      "regexp": ".",
-                      "file": 1,
-                      "location": 2,
-                      "message": 3
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
                     }
                 ],
                 "background": {
@@ -107,6 +107,19 @@
             "appId": "salute-world",
             "label": "daprd-down-webapi2",
             "type": "daprd-down"
+        },
+        {
+            "appId": "hello-world",
+            "appPort": 5000,
+            "label": "dapr-debug",
+            "type": "dapr",
+            "dependsOn": "daprd-debug-webapi"
+        },
+        {
+            "appId": "hello-world",
+            "label": "daprd-down",
+            "type": "daprd-down",
+            "dependsOn": "daprd-down-webapi"
         }
     ]
 }
